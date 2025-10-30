@@ -1,0 +1,52 @@
+{
+  "name": "oitvoip-mcp-server",
+  "version": "1.0.0",
+  "description": "OITVOIP MCP Server for NetSapiens Platform Integration",
+  "main": "build/index.js",
+  "bin": {
+    "oitvoip-mcp-server": "build/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js",
+    "watch": "tsx watch src/index.ts",
+    "clean": "rimraf build",
+    "prebuild": "npm run clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "netsapiens",
+    "voip",
+    "oitvoip",
+    "api",
+    "integration"
+  ],
+  "author": "OITVOIP",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.6.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OITApps/oitvoip-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OITApps/oitvoip-mcp-server/issues"
+  },
+  "homepage": "https://github.com/OITApps/oitvoip-mcp-server#readme"
+}
