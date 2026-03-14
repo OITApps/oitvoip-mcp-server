@@ -1,0 +1,17 @@
+{
+  "type": "mcp",
+  "id": "oitvoip",
+  "name": "NetSapiens VoIP",
+  "description": "VoIP user management, call records, domains, billing via NetSapiens API",
+  "recommended": true,
+  "category": "core",
+  "command": "node",
+  "args": ["../oitvoip-mcp-server/build/index.js"],
+  "env": {
+    "NETSAPIENS_API_URL": "https://api.ucaasnetwork.com"
+  },
+  "requiredKeys": ["NETSAPIENS_API_TOKEN"],
+  "keyDescriptions": {
+    "NETSAPIENS_API_TOKEN": "1Password vault 'OIT Shared'. Ask: Ray, Jack, Shane"
+  }
+}
